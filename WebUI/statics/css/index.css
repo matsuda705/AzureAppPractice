@@ -1,0 +1,98 @@
+#realtime-info {
+    display: flex;
+    padding: 20px;
+}
+
+.index-line {
+    margin-right: 30px;
+}
+
+/* カードの共通スタイル設定 */
+.card {
+    width: 230px;
+}
+
+.card-body {
+    display: flex;
+}
+
+.card-text {
+    display: flex;
+    align-items: center;
+}
+
+.card-param {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.high-alart {
+    color: red;
+}
+
+.low-alart {
+    color: blue;
+}
+
+/* 個別カードのスタイル設定 */
+.cooler {
+    color: aqua;
+}
+
+.heater {
+    color: tomato;
+}
+
+.bg-fan {
+    background-color: yellowgreen;
+}
+
+.bg-co2 {
+    background-color: yellow;
+}
+
+.bg-thermo {
+    background-color: coral;
+}
+
+.label-on-office-map {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+}
+
+#text-on-office-map {
+    top: 6%;
+    left: 8%;
+}
+
+#aircon-a-label {
+    top: 45%;
+    left: 3%;
+}
+
+#thermo-a-label {
+    top: 88%;
+    left: 3%;
+}
+
+#fan-label {
+    top: 6%;
+    left: 47%;
+}
+
+#co2-label {
+    top: 6%;
+    left: 94%;
+}
+
+#aircon-b-label {
+    top: 49%;
+    left: 96%;
+}
+
+#thermo-b-label {
+    top: 88%;
+    left: 96%;
+}

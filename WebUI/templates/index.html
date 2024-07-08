@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+     
+{% block title %}リアルタイム表示{% endblock %}
+ 
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div id="realtime-info">
+    <div class="index-line">
+        <div class="card text-dark mb-3">
+            <div class="card-header bg-info">エアコンA</div>
+            <div class="card-body">
+                <div class="card-text">稼働状態</div>
+                <div class="card-text card-param cooler">冷房</div>
+            </div>
+            <div class="card-body">
+                <div class="card-text">設定温度</div>
+                <div class="card-text card-param">28 ℃</div>
+            </div>
+        </div>
+
+        <div class="card text-dark mb-3"style="margin-top: 146px;">
+            <div class="card-header bg-thermo">温湿度計A</div>
+            <div class="card-body">
+                <div class="card-text">気温</div>
+                <div class="card-text card-param">26 ℃</div>
+            </div>
+            <div class="card-body">
+                <div class="card-text">湿度</div>
+                <div class="card-text card-param low-alart">32 %</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="index-line">
+        <div class="card text-dark mb-3" style="margin-left: 110px;">
+            <div class="card-header bg-fan">換気扇</div>
+            <div class="card-body">
+                <div class="card-text">稼働状態</div>
+                <div class="card-text card-param heater">ON</div>
+            </div>
+        </div>
+
+        <div style="position: relative;">
+            <img src="{{ url_for('static', filename='images/office_map.png') }}" width="449" height="216">
+            <p class="label-on-office-map" id="text-on-office-map">オフィス図</p>
+            <p class="label-on-office-map" id="aircon-a-label">A</p>
+            <p class="label-on-office-map" id="thermo-a-label">A</p>
+            <p class="label-on-office-map" id="fan-label">換気扇</p>
+            <p class="label-on-office-map" id="co2-label">CO2</p>
+            <p class="label-on-office-map" id="aircon-b-label">B</p>
+            <p class="label-on-office-map" id="thermo-b-label">B</p>
+        </div>
+
+    </div>
+
+    <div class="index-line">
+        <div class="card text-dark mb-3">
+            <div class="card-header bg-co2">CO2濃度計</div>
+            <div class="card-body">
+                <div class="card-text">CO2濃度</div>
+                <div class="card-text card-param high-alart">1000ppm</div>
+            </div>
+        </div>
+
+        <div class="card text-dark mb-3">
+            <div class="card-header bg-info">エアコンB</div>
+            <div class="card-body">
+                <div class="card-text">稼働状態</div>
+                <div class="card-text card-param heater">暖房</div>
+            </div>
+            <div class="card-body">
+                <div class="card-text">設定温度</div>
+                <div class="card-text card-param">28 ℃</div>
+            </div>
+        </div>
+
+        <div class="card text-dark mb-3">
+            <div class="card-header bg-thermo">温湿度計B</div>
+            <div class="card-body">
+                <div class="card-text">気温</div>
+                <div class="card-text card-param">26 ℃</div>
+            </div>
+            <div class="card-body">
+                <div class="card-text">湿度</div>
+                <div class="card-text card-param high-alart">86 %</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
