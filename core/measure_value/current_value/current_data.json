@@ -1,0 +1,30 @@
+[
+    {
+        "name": "air_conditioner_A",
+        "temp": 37,
+        "mode": "heat"
+    },
+    {
+        "name": "air_conditioner_B",
+        "temp": 71,
+        "mode": "cool"
+    },
+    {
+        "name": "fan",
+        "value": false
+    },
+    {
+        "name": "co2_monitor",
+        "value": 563
+    },
+    {
+        "name": "thermohygrometer_A",
+        "temp": 37,
+        "humidity": 55
+    },
+    {
+        "name": "thermohygrometer_B",
+        "temp": 68,
+        "humidity": 3
+    }
+]
