@@ -10,37 +10,37 @@
 {% block content %}
 <div id="realtime-info">
     <div class="index-line">
-        <div class="card text-dark mb-3">
+        <div id="air_conditioner_A" class="card text-dark mb-3">
             <div class="card-header bg-info">エアコンA</div>
             <div class="card-body">
                 <div class="card-text">稼働状態</div>
-                <div class="card-text card-param cooler">冷房</div>
+                <div class="card-text card-param status-val">-</div>
             </div>
             <div class="card-body">
                 <div class="card-text">設定温度</div>
-                <div class="card-text card-param">28 ℃</div>
+                <div class="card-text card-param set-temp">- ℃</div>
             </div>
         </div>
 
-        <div class="card text-dark mb-3"style="margin-top: 146px;">
+        <div id="thermohygrometer_A" class="card text-dark mb-3"style="margin-top: 146px;">
             <div class="card-header bg-thermo">温湿度計A</div>
             <div class="card-body">
                 <div class="card-text">気温</div>
-                <div class="card-text card-param">26 ℃</div>
+                <div class="card-text card-param get-temp">- ℃</div>
             </div>
             <div class="card-body">
                 <div class="card-text">湿度</div>
-                <div class="card-text card-param low-alart">32 %</div>
+                <div class="card-text card-param get-humidity">- %</div>
             </div>
         </div>
     </div>
 
     <div class="index-line">
-        <div class="card text-dark mb-3" style="margin-left: 110px;">
+        <div id="fan" class="card text-dark mb-3" style="margin-left: 110px;">
             <div class="card-header bg-fan">換気扇</div>
             <div class="card-body">
                 <div class="card-text">稼働状態</div>
-                <div class="card-text card-param heater">ON</div>
+                <div class="card-text card-param status-bool">-</div>
             </div>
         </div>
 
@@ -58,35 +58,35 @@
     </div>
 
     <div class="index-line">
-        <div class="card text-dark mb-3">
+        <div id="co2_monitor" class="card text-dark mb-3">
             <div class="card-header bg-co2">CO2濃度計</div>
             <div class="card-body">
                 <div class="card-text">CO2濃度</div>
-                <div class="card-text card-param high-alart">1000ppm</div>
+                <div class="card-text card-param co2-val">- ppm</div>
             </div>
         </div>
 
         <div class="card text-dark mb-3">
-            <div class="card-header bg-info">エアコンB</div>
+            <div id="air_conditioner_B" class="card-header bg-info">エアコンB</div>
             <div class="card-body">
                 <div class="card-text">稼働状態</div>
-                <div class="card-text card-param heater">暖房</div>
+                <div class="card-text card-param status-val">-</div>
             </div>
             <div class="card-body">
                 <div class="card-text">設定温度</div>
-                <div class="card-text card-param">28 ℃</div>
+                <div class="card-text card-param set-temp">- ℃</div>
             </div>
         </div>
 
         <div class="card text-dark mb-3">
-            <div class="card-header bg-thermo">温湿度計B</div>
+            <div id="thermohygrometer_B" class="card-header bg-thermo">温湿度計B</div>
             <div class="card-body">
                 <div class="card-text">気温</div>
-                <div class="card-text card-param">26 ℃</div>
+                <div class="card-text card-param get-temp">- ℃</div>
             </div>
             <div class="card-body">
                 <div class="card-text">湿度</div>
-                <div class="card-text card-param high-alart">86 %</div>
+                <div class="card-text card-param get-humidity">- %</div>
             </div>
         </div>
     </div>
