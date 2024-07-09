@@ -49,6 +49,7 @@ $(document).ready(function() {
 
     function fetchApiData() {
         $.ajax({
+            // /get_dummyはテスト用API
             url: '/get_dummy',
             type: 'GET',
             success: function(data) {
