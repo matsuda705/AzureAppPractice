@@ -14,7 +14,6 @@ current_data_path = os.path.join(
 
 def main() -> None:
     measure = Measure()
-
     try:
         while True:
             latest_data = measure.get_all_data()
@@ -33,5 +32,5 @@ def _update_json(file_path, data) -> bool:
         json.dump(data, file, indent=4)
 
 
-if __name__ == "run":
+if __name__ == "__main__":
     main()
