@@ -30,3 +30,7 @@ def _get_current_data() -> dict:
     except Exception() as e:
         print(e)
         return []
+
+
+if __name__ == '__main__':
+    app.run()
