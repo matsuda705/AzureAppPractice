@@ -5,6 +5,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -66,8 +67,8 @@
             </div>
         </div>
 
-        <div class="card text-dark mb-3">
-            <div id="air_conditioner_B" class="card-header bg-info">エアコンB</div>
+        <div id="air_conditioner_B" class="card text-dark mb-3">
+            <div class="card-header bg-info">エアコンB</div>
             <div class="card-body">
                 <div class="card-text">稼働状態</div>
                 <div class="card-text card-param status-val">-</div>
@@ -78,8 +79,8 @@
             </div>
         </div>
 
-        <div class="card text-dark mb-3">
-            <div id="thermohygrometer_B" class="card-header bg-thermo">温湿度計B</div>
+        <div id="thermohygrometer_B" class="card text-dark mb-3">
+            <div class="card-header bg-thermo">温湿度計B</div>
             <div class="card-body">
                 <div class="card-text">気温</div>
                 <div class="card-text card-param get-temp">- ℃</div>

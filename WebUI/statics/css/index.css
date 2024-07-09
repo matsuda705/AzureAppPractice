@@ -9,7 +9,7 @@
 
 /* カードの共通スタイル設定 */
 .card {
-    width: 230px;
+    width: 240px;
 }
 
 .card-body {
@@ -27,11 +27,11 @@
     font-weight: bold;
 }
 
-.high-alart {
+.high-alert {
     color: red;
 }
 
-.low-alart {
+.low-alert {
     color: blue;
 }
 
