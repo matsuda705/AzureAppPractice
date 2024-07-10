@@ -1,5 +1,6 @@
 import json
 import os
+import requests
 
 from flask import Flask, render_template, jsonify
 
@@ -12,6 +13,15 @@ app = Flask(__name__, static_folder="./statics")
 @app.route('/')
 def index():
     return render_template("index.html")
+
+
+@app.route('/get_current_data')
+def get_current_data():
+    response = requests.get(
+        "https://mk-flask-core-app.azurewebsites.net/get_current_data"
+    )
+
+    return jsonify(response.json())
 
 
 @app.route('/get_dummy')

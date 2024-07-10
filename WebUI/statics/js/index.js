@@ -51,7 +51,7 @@ $(document).ready(function() {
         $.ajax({
             // /get_dummyはテスト用API
             // url: '/get_dummy',
-            url: 'https://mk-flask-core-app.azurewebsites.net/get_current_data',
+            url: '/get_current_data',
             type: 'GET',
             success: function(data) {
                 data.forEach(unit_data => {
