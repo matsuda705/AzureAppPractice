@@ -1,0 +1,29 @@
+@startuml リアルタイム表示画面の動作
+
+actor "ユーザー"
+box "mk-flask-web-app"
+    participant "app.py(web)"
+end box
+
+box "mk-flask-core-app"
+    participant "app.py(core)"
+    participant "main.py"
+    participant "current_data.json"
+end box
+
+"ユーザー" -> "app.py(web)" : アクセス
+return リアルタイム表示画面
+
+loop 10秒に1回
+    "main.py" -> "current_data.json": 空調機器の最新計測値を書き込み
+end
+
+loop 5秒に1回
+    "app.py(web)" -> "app.py(core)" : apiを呼び出す
+        "app.py(core)" -> "current_data.json" : 読み込み
+        return
+    "app.py(core)" --> "app.py(web)": jsonの内容を返す
+    "app.py(web)" --> "ユーザー": 画面上の値に反映
+end
+
+@enduml
