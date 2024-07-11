@@ -67,3 +67,4 @@ jobs:
           app-name: 'mk-flask-web-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_04E3F2B0AA9B4D1988C565DF04F7AA1D }}
+          package: './WebUI'
