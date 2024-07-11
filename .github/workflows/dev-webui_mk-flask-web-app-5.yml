@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - mk-flask-web-app-5
+name: Build and deploy Python app to Azure Web App - mk-flask-web-app-4
 
 on:
   push:
@@ -67,3 +67,4 @@ jobs:
           app-name: 'mk-flask-web-app-5'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2FFA40137E474EF99B4A54C2F6B2219B }}
+          package: './WebUI'
