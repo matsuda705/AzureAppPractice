@@ -75,6 +75,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # (略)
+      - name: Install dependencies
+        run: pip install -r WebUI/requirements.txt # requirements.txtの位置指定
 
   # (略)
 
