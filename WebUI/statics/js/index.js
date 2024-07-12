@@ -85,4 +85,6 @@ $(document).ready(function() {
     fetchApiData()
     // 1000ミリ秒（1秒）ごとにfetchApiData関数を実行
     setInterval(fetchApiData, 5000);
+
+    $("#index_navbar").addClass('active');
 });
