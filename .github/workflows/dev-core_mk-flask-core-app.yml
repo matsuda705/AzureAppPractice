@@ -67,3 +67,4 @@ jobs:
           app-name: 'mk-flask-core-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A031B54343F34BB38DEF9AF97EBF31AF }}
+          package: './core'
