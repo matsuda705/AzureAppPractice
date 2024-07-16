@@ -1,0 +1,86 @@
+<mxfile host="65bd71144e">
+    <diagram id="DHRU4lbN4Wugf0_XbcgH" name="ページ1">
+        <mxGraphModel dx="911" dy="725" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="47" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" parent="1" vertex="1">
+                    <mxGeometry x="336" y="57" width="552.75" height="425" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" parent="47" vertex="1">
+                    <mxGeometry x="145" y="301" width="58.8" height="58.8" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="47">
+                    <mxGeometry x="173.71" y="171.5" width="74.89" height="100.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="ブラウザ内&lt;br&gt;React実行環境" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="47">
+                    <mxGeometry x="179.05497741998823" y="231" width="66.86628706067151" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;curved=1;exitX=0.697;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="47" source="2">
+                    <mxGeometry width="140" relative="1" as="geometry">
+                        <mxPoint x="185.07294325544865" y="296" as="sourcePoint"/>
+                        <mxPoint x="186" y="271" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="画面表示" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="47">
+                    <mxGeometry x="184.4" y="130" width="58.6" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" parent="47" vertex="1">
+                    <mxGeometry x="473" y="207.43" width="57.57" height="57.57" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="47" edge="1" source="51">
+                    <mxGeometry width="140" relative="1" as="geometry">
+                        <mxPoint x="84.2515216964461" y="256" as="sourcePoint"/>
+                        <mxPoint x="469" y="236" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="✘" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="47" vertex="1">
+                    <mxGeometry x="472.9953465540939" y="177.43" width="57.5050068721775" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="https://mk-flask-web-app.azurewebsites.net/&lt;br&gt;のアクセスを許可" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="47" vertex="1">
+                    <mxGeometry x="307.99585902218735" y="186.25" width="81.57687021401925" height="52.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="App Service&lt;br&gt;mk-flask-web-app" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="47" vertex="1">
+                    <mxGeometry x="123.39999999999998" y="363" width="102" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="App Service&lt;br&gt;mk-flask-core-app" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="47" vertex="1">
+                    <mxGeometry x="450.75" y="269" width="102" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.android;fillColor=#205E00;gradientColor=none;" vertex="1" parent="47">
+                    <mxGeometry x="188" y="177.43" width="42" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;exitX=0.133;exitY=1.064;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="490" y="353" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="20" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="729" y="231" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="737" y="83"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="477" y="74" width="78" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="ブラウザからアクセス&lt;br&gt;https://mk-flask-web-app.azurewebsites.net/" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="349" y="233" width="130" height="53" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="アクセス制限" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="728" y="111" width="86" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;endArrow=open;startSize=14;endSize=14;sourcePerimeterSpacing=8;targetPerimeterSpacing=8;curved=1;exitX=0.152;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="50">
+                    <mxGeometry width="140" relative="1" as="geometry">
+                        <mxPoint x="556" y="229" as="sourcePoint"/>
+                        <mxPoint x="520" y="158" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
