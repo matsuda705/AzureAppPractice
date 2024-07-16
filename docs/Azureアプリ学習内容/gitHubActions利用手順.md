@@ -1,8 +1,8 @@
-# Azureアプリ学習内容
+# gitHub Actions利用手順
 
 ## 目次
 
-- [Azureアプリ学習内容](#azureアプリ学習内容)
+- [gitHub Actions利用手順](#github-actions利用手順)
   - [目次](#目次)
   - [参考リンク](#参考リンク)
   - [用いたサービスについて](#用いたサービスについて)
