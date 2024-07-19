@@ -54,6 +54,25 @@ $(document).ready(function() {
             url: '/get_current_data',
             type: 'GET',
             success: function(data) {
+                Object.entries(data).forEach(([unit_id, unit_data]) => {
+                    $card_unit = $("#" + unit_id);
+
+                    if (unit_id.includes("air_conditioner")) {
+                        updateAirconCard($card_unit, unit_data);
+                    }
+
+                    if (unit_id.includes("fan")) {
+                        updateFanCard($card_unit, unit_data);
+                    }
+
+                    if (unit_id.includes("co2_monitor")) {
+                        updateCO2Card($card_unit, unit_data);
+                    }
+
+                    if (unit_id.includes("thermohygrometer")) {
+                        updateThermoHygroCard($card_unit, unit_data);
+                    }
+                })
                 data.forEach(unit_data => {
                     unit_id = unit_data["name"];
                     $card_unit = $("#" + unit_id);

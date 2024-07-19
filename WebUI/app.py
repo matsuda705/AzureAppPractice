@@ -40,8 +40,10 @@ def setting():
 
 @app.route('/get_current_data')
 def get_current_data():
+    api_key = "JVjsDSgHReooM0RZ1U6STsmrQIwIPDoAv4ByC4L-vAXyAzFu6MvXDQ%3D%3D"
+    url = f"https://jbsmkfunctionapp.azurewebsites.net/api/get_current_data?code={api_key}"
     response = requests.get(
-        "https://mk-flask-core-app.azurewebsites.net/get_current_data"
+        url
     )
 
     return jsonify(response.json())
