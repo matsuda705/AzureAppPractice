@@ -6,6 +6,10 @@ from flask import Flask, render_template, jsonify
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 DUMMY_DATA_PATH = os.path.join(current_dir, "dummy/dummy_data.json")
+CORE_API_KEY = os.environ["FUNCTION_APP_API_KEY"]
+FUNCTION_APP_NAME = os.environ["FUNCTION_APP_NAME"]
+CORE_API_URL = f"https://{FUNCTION_APP_NAME}.azurewebsites.net/api/\
+                get_current_data?code={CORE_API_KEY}"
 
 # 空調機器の名前
 machine_name_data = {
@@ -40,8 +44,7 @@ def setting():
 
 @app.route('/get_current_data')
 def get_current_data():
-    api_key = "JVjsDSgHReooM0RZ1U6STsmrQIwIPDoAv4ByC4L-vAXyAzFu6MvXDQ%3D%3D"
-    url = f"https://jbsmkfunctionapp.azurewebsites.net/api/get_current_data?code={api_key}"
+    url = CORE_API_URL
     response = requests.get(
         url
     )
