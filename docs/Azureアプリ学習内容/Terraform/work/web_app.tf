@@ -13,5 +13,6 @@ resource "azurerm_linux_web_app" "webapp" {
   }
   app_settings = {
     "FUNCTION_APP_API_KEY" = data.azurerm_function_app_host_keys.api_key_data.default_function_key
+    "FUNCTION_APP_NAME"    = azurerm_linux_function_app.function_app.name
   }
 }
