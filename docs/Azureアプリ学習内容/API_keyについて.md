@@ -48,7 +48,7 @@ def get_current_data():
 - 参考 https://note.com/minaul/n/nfe6b852b13d1
 
 1. Azure Portalより環境変数を設定
-![](image-1.png)
+![](image-4.png)
 2. pythonの標準ライブラリの機能`os.environ`から取得できることを確認。下記画像は環境変数を設定したApp ServiceのSSH上で実行したpythonコード。
 ![](image-3.png)
 
