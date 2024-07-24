@@ -15,9 +15,11 @@
 
 ## 参考
 
-- https://learn.microsoft.com/ja-jp/azure/app-service/provision-resource-terraform
-- https://zenn.dev/yupon55/articles/d4d0c10634fb5d
-- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/function_app
+- MSドキュメント: https://learn.microsoft.com/ja-jp/azure/app-service/provision-resource-terraform
+- Terraformの構築: https://zenn.dev/yupon55/articles/d4d0c10634fb5d
+- terraformの設定: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/function_app
+- vnet: https://learn.microsoft.com/ja-jp/azure/developer/terraform/hub-spoke-on-prem
+- static_web_appのデプロイ: https://zenn.dev/dzeyelid/articles/9ab7b020fd774c212344
 
 ## 概要
 
