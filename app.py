@@ -44,12 +44,16 @@ def setting():
 
 @app.route('/get_current_data')
 def get_current_data():
-    url = CORE_API_URL
-    response = requests.get(
-        url
-    )
+    try:
+        url = CORE_API_URL
+        response = requests.get(
+            url
+        )
 
-    return jsonify(response.json())
+        return jsonify(response.json())
+    except Exception as e:
+        # エラーが発生した場合にエラーメッセージとステータスコードを返す
+        return jsonify(error=str(e)), 500
 
 
 @app.route('/get_dummy')
