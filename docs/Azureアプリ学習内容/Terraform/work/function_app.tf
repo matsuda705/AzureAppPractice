@@ -13,16 +13,16 @@ resource "azurerm_linux_function_app" "function_app" {
   service_plan_id            = azurerm_service_plan.app_service_plan.id
   storage_account_name       = azurerm_storage_account.func_app_storage.name
   storage_account_access_key = azurerm_storage_account.func_app_storage.primary_access_key
-  virtual_network_subnet_id  = azurerm_subnet.webAppSubnet.id
+  # virtual_network_subnet_id  = azurerm_subnet.funcAppSubnet.id
   site_config {
     application_stack {
       python_version = "3.9"
     }
-    always_on        = true
+    always_on        = false
   }
 }
 
-# data "azurerm_function_app_host_keys" "api_key_data" {
-#   name                = azurerm_linux_function_app.function_app.name
-#   resource_group_name = azurerm_resource_group.rg.name
-# }
+data "azurerm_function_app_host_keys" "api_key_data" {
+  name                = azurerm_linux_function_app.function_app.name
+  resource_group_name = azurerm_resource_group.rg.name
+}

@@ -20,6 +20,7 @@
 - terraformの設定: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/function_app
 - vnet: https://learn.microsoft.com/ja-jp/azure/developer/terraform/hub-spoke-on-prem
 - static_web_appのデプロイ: https://zenn.dev/dzeyelid/articles/9ab7b020fd774c212344
+- function appのvnet統合: https://zenn.dev/pinter/articles/20230901functionsvnet
 
 ## 概要
 
