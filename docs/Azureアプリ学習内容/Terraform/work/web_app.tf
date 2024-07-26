@@ -11,6 +11,13 @@ resource "azurerm_linux_web_app" "webapp" {
     application_stack {
       python_version = "3.12"
     }
+    ip_restriction {
+      name       = "AllowWiFiIP"
+      ip_address = "xxx.xxx.xxx.0/24"  # 許可するIPアドレスの範囲指定
+      action     = "Allow"
+      priority   = 100
+    }
+    ip_restriction_default_action = "Deny"
   }
   app_settings = {
     "FUNCTION_APP_API_KEY" = data.azurerm_function_app_host_keys.api_key_data.default_function_key

@@ -12,6 +12,9 @@
   - [TerraFormテンプレートの記載](#terraformテンプレートの記載)
   - [Terraformの書き方について](#terraformの書き方について)
   - [TerraFormコードの実行](#terraformコードの実行)
+  - [アクセス制限の設定](#アクセス制限の設定)
+    - [やりたいこと](#やりたいこと)
+    - [手順](#手順)
 
 ## 参考
 
@@ -24,7 +27,7 @@
 
 ## 概要
 
-- インフラの設定をコードで書きそのコードからインフラ構築・削除・編集など行う事のできる機能
+- クラウドインフラの設定をコードで書きそのコードからインフラ構築・削除・編集など行う事のできる機能
 - Azureに限らずAWSやGCPなどでも使える
 - 基本的な書き方としてはプロバイダ、リソース名を指定してそこに必要な設定を記載していくような形
   - 変数設定や動的処理を書くことも可能
@@ -132,4 +135,42 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
 $ terraform init
 $ terraform plan
 $ terraform apply # 入力を求められたときに"yes"を入力
+```
+
+## アクセス制限の設定
+
+### やりたいこと
+
+- 管理画面のアクセス制限として社内Wi-FiのIPのみ許可、それ以外のアクセスを拒否するようにしたい
+- AzurePortalから設定したときはAppServiceのネットワークのタブから実行
+  - `受信トラフィックの構成`→`公衆ネットワーク アクセス` で移動したページで以下のように変更
+    - 公衆ネットワーク アクセス: 選択した仮想ネットワークとIPアドレスから有効
+    - 一致しないルールのアクション: 拒否
+    - ルールの追加→ソースの設定: IPv4, IPアドレスブロック: (許可するWiFiのグローバルIPブロック)
+
+手順で設定した例
+
+![alt text](image.png)
+
+### 手順
+
+- (参考)https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service
+- web appのsite_configにip_restrictionのブロックを追加し、設定値をまとめる。
+
+
+docs/Azureアプリ学習内容/Terraform/work/web_app.tf
+
+```bash
+(略)
+ site_config { 
+    }
+    ip_restriction {
+      name       = "AllowWiFiIP"
+      ip_address = "xxx.xxx.xxx.0/24"
+      action     = "Allow"
+      priority   = 100
+    }
+    ip_restriction_default_action = "Deny"
+  }
+(略)
 ```

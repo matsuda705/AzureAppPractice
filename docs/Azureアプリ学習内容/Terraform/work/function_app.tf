@@ -10,7 +10,7 @@ resource "azurerm_linux_function_app" "function_app" {
   name                       = "mk-python-functionApp-${random_integer.ri.result}"
   location                   = azurerm_resource_group.rg.location
   resource_group_name        = azurerm_resource_group.rg.name
-  service_plan_id            = azurerm_service_plan.app_service_plan.id
+  service_plan_id            = azurerm_service_plan.function_app_plan.id
   storage_account_name       = azurerm_storage_account.func_app_storage.name
   storage_account_access_key = azurerm_storage_account.func_app_storage.primary_access_key
   # virtual_network_subnet_id  = azurerm_subnet.funcAppSubnet.id
