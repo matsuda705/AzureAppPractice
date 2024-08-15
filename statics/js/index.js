@@ -50,8 +50,8 @@ $(document).ready(function() {
     function fetchApiData() {
         $.ajax({
             // /get_dummyはテスト用API
-            // url: '/get_dummy',
-            url: '/get_current_data',
+            url: '/get_dummy',
+            // url: '/get_current_data',
             type: 'GET',
             success: function(data) {
                 Object.entries(data).forEach(([unit_id, unit_data]) => {
